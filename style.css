@@ -7,6 +7,7 @@ box-sizing:border-box;
 body
 {
 background:white;
+font-family: "Lucida Console", Courier, monospace;
 }
 
 .navbar ul{
@@ -43,25 +44,30 @@ background:white;
 }
 
 .welcome{
-  display:flex;
-  height:100%;
+  height:700px;
+  display:block;
   
 }
 /* profile image*/
 .welcome .profile-img {
+  float:left;
   margin-left:50px;
   margin-top:90px;
   margin-bottom:60px;
 
 }
 .welcome .profile-img img{
-  height :500px;
   width:500px;
+  height:500px;
+}
+.welcome .hello{
+  float:left;
+  padding-left:100px;
+  padding-top:200px;
 }
 .hello h1{
   color:black;
-  margin-left:100px;
-  margin-top:200px;
+  
   font-family: "Lucida Console", Courier, monospace;
   font-weight:1000;
   font-size:2vw;
@@ -70,7 +76,6 @@ background:white;
   text-shadow:-25px 0px 4px powderblue;
   font-size:4vw;
 }
-
 
 
 /*about   */
@@ -99,10 +104,28 @@ background:white;
 }
 .about p{
   text-indent:60px;
+  line-height:25px;
   margin-top:15px;
+  margin-bottom:40px;
   background-color:;
   font-family: "Lucida Console", Courier, monospace;
 }
+
+.about-info a{
+  text-decoration:none;
+  color:black;
+  margin-left:100px;
+  font-weight:100;
+  height:40px;
+  padding:10px;
+  border-radius:5px;
+  border: 2px solid  #33cc00;
+}
+.about-info a:hover{
+  color:white;
+  background-color:#33cc00;
+}
+
 
 
 
@@ -137,9 +160,10 @@ background:white;
 }
 .edu-card h3{
   text-align:center;
-  margin:0px 0px;
+  margin:20px 0px;
 }
 .edu-card ul{
+  line-height:20px;
   list-style-type:none;
   padding-left:30px;
 }
@@ -166,7 +190,10 @@ padding:100px 100px;
   margin-bottom:30px;
   font-size:30px;
 }
-
+.skillz p{
+  margin-top:30px;
+  margin-bottom:10px;
+}
 /* Container for skill bars */
 .container {
   border:2px solid black;
@@ -211,16 +238,16 @@ padding:100px 100px;
 }
 .expertise .expert-info{
   font-size:20px;
-color:#666666;
+  color:#666666;
   margin-top:100px;
   margin-left:50px;
   
 }
 .expertise img:hover {
-  border:2px solid black;
+  border:2px solid #33cc00;
 }
-.expertise img:hover ~ .expert-info{
-  color:black;
+.expertise img:hover ~ .expert-info b{
+  color:#33cc00;
 }
 
 /* projects  */
