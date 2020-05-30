@@ -38,6 +38,8 @@ background:white;
 .navbar li a:hover {
   background-color: ;
   text-shadow:0px 5px 3px blue;
+  font-weight:1000;
+  font-size:25px;
 }
 
 .welcome{
@@ -90,14 +92,15 @@ background:white;
   padding:60px;
 }
 .about-info h1{
-  background-color:blue;
+  background-color:;
   text-align:center;
   font-size:2000;
   margin-bottom:30px;
 }
 .about p{
+  text-indent:60px;
   margin-top:15px;
-  background-color:blue;
+  background-color:;
   font-family: "Lucida Console", Courier, monospace;
 }
 
@@ -112,7 +115,7 @@ background:white;
 
 .edu h2{
   text-align:center;
-  background-color:blue;
+  background-color:;
   
   font-size:30px;
 }
@@ -224,6 +227,8 @@ color:#666666;
 .projects{
   padding:100px 100px;
   display:block;
+  background-color:;
+  height:700px;
 }
 .projects h2{
   width:100%;
@@ -232,12 +237,69 @@ color:#666666;
   font-size:30px;
 }
 .project{
+  position:relative;
   float:left;
-  width:335px;
-  margin:20px;
-  background-color:blue;
+  width:30%;
+  margin:1.5%;
+  background-color:;
   margin-top:10px;
 }
 .project .project-img img{
   width:335px;
 }
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.project-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: .3s ease;
+}
+
+/* When you mouse over the container, the overlay text will "zoom" in display */
+.project:hover .project-info{
+  transform: scale(1);
+}
+
+/* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
+.project-info p{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+/* social-media 8*/
+
+.social-media{
+  display:block;
+  width:100%;
+  text-align:center;
+  background-color:#ddd;
+  padding:100px 100px;
+}
+.social-media h1{
+  margin:30px;
+  font-family:Sofia;
+  font-size:40px;
+}
+.social-media h2{
+  font-size:30px;
+}
+.social-media img{
+  margin:30px;
+  width:7%;
+  height:70px;
+  border-radius:30px;
+}
+
