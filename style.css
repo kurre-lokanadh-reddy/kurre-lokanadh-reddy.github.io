@@ -148,15 +148,16 @@ font-family: "Lucida Console", Courier, monospace;
   height:50%;
   margin-top:40px;
   margin-left:30px;
-  border:1px solid #cccccc;
+  background-color:#f2f2f2;
+  box-shadow:0px 0px 2px  #b3b3b3;
   border-radius:4px;
   color:#666666;
 }
 .edu-card:hover{
-  border:none;
-  background-color:#cccccc;
+  background-color:white;
+  border:3px solid #79ff4d;
   color:black;
-  border:6px solid #cccccc;
+  box-shadow:0px 0px 16px 10px #9fff80;
 }
 .edu-card h3{
   text-align:center;
@@ -167,13 +168,17 @@ font-family: "Lucida Console", Courier, monospace;
   list-style-type:none;
   padding-left:30px;
 }
+.edu-card:hover small{
+  color:#666666;
+}
 
 
 /* for all quotes */
 .quote{
   text-align:center;
-  color:pink;
-  margin-top:20px;
+  color:#333333;
+  margin-top:40px;
+  margin-bottom:20px;
 }
 
 
