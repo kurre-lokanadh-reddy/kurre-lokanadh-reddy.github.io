@@ -10,6 +10,7 @@ background:white;
 font-family: "Lucida Console", Courier, monospace;
 }
 
+
 .navbar ul{
   float:top;
   width:100%;
@@ -19,7 +20,7 @@ font-family: "Lucida Console", Courier, monospace;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: white;
+  background-color: #55917F;
 }
 
 .navbar li {
@@ -37,10 +38,11 @@ font-family: "Lucida Console", Courier, monospace;
 
 /* Change the link color to #111 (black) on hover */
 .navbar li a:hover {
-  background-color: ;
-  text-shadow:0px 5px 3px blue;
+  background-color: #fff;
+  color:#d1d646;
+  /*text-shadow:0px 5px 3px blue;
   font-weight:1000;
-  font-size:25px;
+  font-size:25px;*/
 }
 
 .welcome{
@@ -139,7 +141,7 @@ font-family: "Lucida Console", Courier, monospace;
 .edu h2{
   text-align:center;
   background-color:;
-  
+  color:#5e4c5a;
   font-size:30px;
 }
 .edu .edu-card{
@@ -149,15 +151,15 @@ font-family: "Lucida Console", Courier, monospace;
   margin-top:40px;
   margin-left:30px;
   background-color:#f2f2f2;
-  box-shadow:0px 0px 2px  #b3b3b3;
+  box-shadow:0px 10px 20px  #6BAB90;
   border-radius:4px;
   color:#666666;
 }
 .edu-card:hover{
-  background-color:white;
-  border:3px solid #79ff4d;
+  background-color:;
+  border:3px solid #6BAB90;
   color:black;
-  box-shadow:0px 0px 16px 10px #9fff80;
+  box-shadow:0px 20px 20px 10px #6BAB90;
 }
 .edu-card h3{
   text-align:center;
@@ -167,6 +169,7 @@ font-family: "Lucida Console", Courier, monospace;
   line-height:20px;
   list-style-type:none;
   padding-left:30px;
+  color:#55917f;
 }
 .edu-card:hover small{
   color:#666666;
@@ -269,29 +272,37 @@ padding:100px 100px;
   font-size:30px;
 }
 .project{
+  border-radius: 30px;
+  border:3px #ffe2d1;
+  border-style:dotted solid double dashed;
   position:relative;
   float:left;
   width:30%;
+  height:250px;
   margin:1.5%;
   background-color:;
   margin-top:10px;
 }
 .project .project-img img{
-  width:335px;
+  width:100%;
+  height:250px;
+  border-radius: 30px;
 }
 
 /* The overlay effect (full height and width) - lays on top of the container and over the image */
 .project-info {
+  margin-top: 10px;
+  border-radius: 30px;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #008CBA;
-  overflow: hidden;
+  background-color: ;
+  overflow:hidden;
   width: 100%;
   height: 100%;
   transform: scale(0);
-  transition: .3s ease;
+  transition: .4s ease;
 }
 
 /* When you mouse over the container, the overlay text will "zoom" in display */
@@ -326,12 +337,20 @@ padding:100px 100px;
   font-size:40px;
 }
 .social-media h2{
+  margin:10px;
   font-size:30px;
 }
 .social-media img{
+  filter: grayscale(40%);
+  filter:blur(3px) grayscale(40%);
   margin:30px;
-  width:7%;
-  height:70px;
-  border-radius:30px;
+  width:4%;
+  height:30px;
+  border-radius:40px;
 }
-
+.social-media img:hover{
+  filter:grayscale(0%);
+}
+.contact img{
+  margin :10px 0;
+}
