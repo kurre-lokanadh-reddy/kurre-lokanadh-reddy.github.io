@@ -1,0 +1,150 @@
+html, body{
+    margin:0;
+    padding:0;
+}
+.modal {
+    --gap: 15px;
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: var(--gap);
+    background: rgba(0, 0, 0, 0.75);
+    font-family: sans-serif;
+    color: var(--third-color);
+  }
+ 
+  .modal__inner {
+    background: var(--back-color);
+    width: 100%;
+    max-width: 1000px;
+    overflow: hidden;
+    border-radius: 4px;
+    z-index: 4;
+  }
+  
+  .modal__top {
+    display: flex;
+    align-items: center;
+    background-color: var(--third-color);
+    color:black;
+  }
+  
+  .modal__title {
+    flex-grow: 1;
+    padding: 0 var(--gap);
+    font-size: 17px;
+  }
+  
+  .modal__close {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: var(--gap);
+    background: none;
+    border:none;
+    border-radius: 20px;
+    outline: none;
+  }
+  .modal__close:hover{
+      background:none;
+      color:var(--high-color);
+  }
+  
+  .modal__content {
+    padding: 0 var(--gap);
+    line-height: 1.5;
+    overflow: hidden;
+  }
+  
+  .modal__bottom {
+    text-align: right;
+    padding: var(--gap) var(--gap) var(--gap) var(--gap);
+  }
+  
+  .modal__button {
+    display: inline-block;
+    padding: 6px 12px;
+    background: var(--back2-color);
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    color: var(--third-color);
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+  .modal__button:not(:last-child) {
+    margin-right: var(--gap);
+  }
+  
+  .modal__button:hover {
+    color:var(--high-color);
+  }
+  .modal__content #console_content{
+      margin-top: 15px;
+      display:block;
+      overflow-y:scroll;
+      height:368px;
+  }
+  
+  .modal__content #console_cursor{
+    font-weight:bolder;
+    display:inline-block;
+    background: var(--first-color);
+    position:relative;
+    left:0px;
+    -webkit-animation: cursor_blinker 1.2s infinite;
+    -ms-animation: cursor_blinker 1.2s infinite;
+    -webkitanimation-timing-function: linear;
+  }
+  
+  @-webkit-keyframes cursor_blinker {
+    0%   { opacity: 0; }
+    49%  { opacity: 0; }
+    50%  { opacity: 1; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes cursor_blinker {
+    0%   { opacity: 0; }
+    49%  { opacity: 0; }
+    50%  { opacity: 1; }
+    100% { opacity: 1; }
+  }			
+  
+  .modal__content #console_output{
+    background-color:none;
+    display:block;
+    left:0;
+    width:100%;
+    overflow:hidden;
+    word-break: break-all;
+    word-wrap:break-word;
+    white-space:pre-wrap;
+    line-height: normal;
+    padding:0px;			
+  }
+  
+  .modal__content #console_input{
+    background-color: none;
+    display:inline;
+    width:100%;
+    overflow:hidden;
+    word-break: break-all;
+    word-wrap:break-word;
+    white-space:pre-wrap;
+    line-height: normal;
+    padding:0px;
+    color:var(--first-color);			
+  }
+  code{
+    color:var(--first-color);
+    font-size: large;
+  }

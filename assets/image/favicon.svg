@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="124" height="124" version="1.1">
+  <polygon points="62,2 122,27 122,97 62,122 2,97 2,27" style="fill:hsl(216, 65%, 11%);stroke:#54d9bd;stroke-width:15;fill-rule:nonzero;"/>
+    <text x="7" y="90" fill="#54d9bd" font-size="65px" font-weight="bold">K</text>
+    <text x="40" y="90" fill="#54d9bd" font-size="80px" font-weight="bold">L</text>
+    <text x="80" y="90" fill="#54d9bd" font-size="65px" font-weight="bold">R</text>
+</svg>
