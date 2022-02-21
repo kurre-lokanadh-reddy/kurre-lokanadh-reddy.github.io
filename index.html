@@ -5,11 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="assets/image/favicon.svg" type="image/svg+xml">
         <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/fontawesome/css/all.css">
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="stylesheet" href="assets/css/modal.css">
-        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-        <script src="https://kit.fontawesome.com/6be3e0c7ca.js" crossorigin="anonymous"></script>
-
+        
         <title>lokanadh</title>
     </head>
     <body>
@@ -26,13 +25,13 @@
                     KLR
                   </svg>
             </a>
-            <a href="#home"><button name="Resume" onclick="">Resume</button></a>
-            <a href="#contact" class="active"><span class="h-color">04.</span> Contact</a>
+            <a href="assets/LokanadhReddy_v4.pdf" download="LokanadhReddySD.pdf" target="_blank"><button name="Resume" onclick="">Resume</button></a>
+            <a href="#contact" ><span class="h-color">04.</span> Contact</a>
             <a href="#work"><span class="h-color">03.</span> Work</a>
             <a href="#exp"><span class="h-color">02.</span> Experience</a>
             <a href="#about"><span class="h-color">01.</span> About</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
+                <i id="menuBars" class="fa fa-bars"></i>
             </a>
             </div>
         </header>
@@ -43,8 +42,8 @@
                         <h1 class="f-color">Lokanadh Reddy, Kurre.</h1>
                         <h1 class="t-color">I do things better.</h1>
                         <p class="h-width">I’m a software engineer specializing in development (and occasionally data analysis) of exceptional functional features for the project. Currently, I’m working on developing customer centric, Salesforce CRM applications at <a class="h-color u-hover">Accenture</a>.</p>
-                        <p class="h-width" style="font-size: smaller;">Not a big fan of boring websites. Now you can know whats on the site with out using your mouse... [click the button below].<a class="h-color u-hover"></a></p>
-                        <button class="m-button" onClick="showModalInit()">Code Your Way Out! </button>
+                        <p class="h-width" style="font-size: smaller;">Not a big fan of boring websites. Now you can know whats on the site with out using your mouse... <span class="f-color"></span>.<a class="h-color u-hover"></a></p>
+                        <button class="m-button hide-780" style="cursor: pointer;" onClick="showModalInit()">Code Your Way Out! </button>
                     </div>
                 </div>
             
@@ -66,7 +65,7 @@
                     </table>
                 </div>
                 <div class="container-item flex_50" style="align-items: center;text-align:center;">
-                    <img src="assets/image/home-right.png" alt="mY profile" height="100%" width="50%"/>
+                    <img src="assets/image/home-right.png" alt="mY profile" height="75%" width="75%"/>
                 </div>
             </div>
 
@@ -109,37 +108,31 @@
             <div id="work" class="container project_main">
                 <div style="flex:100%;margin-bottom:17px;"><h2 class="f-color"><span class="h-color">03.</span> Some Things I’ve Built</h2></div>
                 <div class="container-item" style="flex:100%;">
-                    <div class="project-img img-left">
-                        <img src="assets/image/up1.jpg" alt="" />
+                    <div class="project-img img-left imageProj1">
                         <div class="project-info info-right">
                             <span class="h-color" style="margin-bottom:10px;margin-top:15px;">Featured Project</span>
                             <h3 class="s-color">CRM platform <span class="h-color"></span></h3>
                             <div class="project-card_xl">A CRM for the client and its associated partner's all accros India. Which makes the daily operations and communication more interactive and reliable. As part of the project took every opurtunity that i have recived and a made notable contributions to the team. Activily took the hotfix tasks with relatively low turn around time. Being the first project on professional level got to learn a lot from my coleagues.</div>
-                            <p class="p-skill">Salesforce  Apex  Data-Managment </p>
+                            <p class="p-skill">Salesforce  Apex  SOQL  Aura  Database  Developer</p>
                             <div class="">
-                                <a src="" alt=""><i class="fa fa-github"></i></a>
-                                <a src="" alt=""><i class="fa fa-linkedin"></i></a>
-                                <a src="" alt=""><i class="fa fa-pie-chart"></i></a>
+                                <a src="" alt=""><i class="fab fa-github"></i></a>
                                 <a src="" alt=""><i class="fab fa-salesforce"></i></a>
                             </div>
                         </div>
-                    </div>    
+                    </div> 
                 </div>
                 <div class="container-item" style="flex:100%;">
                     <div class="project-img img-right">
-                        <img src="assets/image/up1.jpg" alt="" />
-                        <div class="project-info info-left">
+                        <div class="project-info info-left imageProj2">
                             <span class="h-color" style="margin-bottom:10px;margin-top:15px;">Acadamic Research Project</span>
                             <h3 class="s-color">Extractive Text Summarization<span class="h-color"></span></h3>
                             <div class="project-card_xl">The project covers some of the state-of-art models with their process and implementations from
                                 scratch, along with a hybrid model which is designed to
                                 work in the demerits of the LSA model. As the Team Lead for the project took care of the Development of the Python BackEnd Alogorithems and the intigration with the frontEnd code.</div>
-                            <p class="p-skill">Python TextAnalysis TextProcessing NLP Heroku.app</p>
+                            <p class="p-skill">Python TextAnalysis twitterAPI NLP Heroku.app</p>
                             <div class="">
-                                <a src="" alt=""><i class="fa fa-github"></i></a>
-                                <a src="" alt=""><i class="fa fa-linkedin"></i></a>
-                                <a src="" alt=""><i class="fa fa-pie-chart"></i></a>
-                                <a src="" alt=""><i class="fab fa-salesforce"></i></a>
+                                <a src="" alt=""><i class="fab fa-github"></i></a>
+                                <a src="" alt=""><i class="fab fa-linkedin"></i></a>
                             </div>
                         </div>
                     </div>    
@@ -150,15 +143,15 @@
                 <div style="flex:100%;margin-bottom:13px;"><h2 class="f-color"> Other Noteworthy Projects</h2></div>
                 <div class="container-item flex_30">
                     <div class="project-card">
-                        <div class="card-top"><div class="i_l"><i class="fa fa-folder-o"></i></div><div class="i_r"><i class="fa fa-external-link"></i><i class="fa fa-github"></i></div></div>
+                        <div class="card-top"><div class="i_l"><i class="fa fa-folder-plus"></i></div><div class="i_r"><i class="fa fa-external-link"></i><i class="fab fa-github"></i></div></div>
                         <h4 class="s-color">Twitter Influence Patterns</h4>
-                        <p>The project is about finding the Influence patterns on the social media which are used in the recomendation engines. Dr.Smt Suneetha GITAM, Vizag. </p>
+                        <p>The project is about finding the Influence patterns on the social media which are used in the recomendation engines. Dr.Smt Suneetha GITAM, Vizag.</p>
                         <p class="p-skill">Python  Git  MatploatLib jupiterNotebook API Scrapping</p>
                     </div>
                 </div>
                 <div class="container-item flex_30">
                     <div class="project-card">
-                        <div class="card-top"><div class="i_l"><i class="fa fa-folder-o"></i></div><div class="i_r"><i class="fa fa-external-link"></i><i class="fa fa-github"></i></div></div>
+                        <div class="card-top"><div class="i_l"><i class="fa fa-folder-plus"></i></div><div class="i_r"><i class="fa fa-external-link"></i><i class="fab fa-github"></i></div></div>
                         <h4 class="s-color">Emojifyer</h4>
                         <p>The thought of how chat apps are suggesting gave me the 
                             motivation to create a LSTM based model that suggests the
@@ -188,15 +181,15 @@
                 <div><h2 class="s-color" >Get In Touch</h2></div>
                 <div id="open2work"><p>Currently i am actively searching for a job, which ever role i am given i will give my 110% to work towards the collective gole of the project and team.</p></div>
                 <!--div id=""><p>Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p></div-->
-                <div><button class="m-button" name="Say Hello" onclick="">Say Hello</button></div>
+                <div><button class="m-button" name="Say Hello" onclick="location.href='mailto:kurrelokanadhreddy1999@gamil.com';">Say Hello</button></div>
             </div>
         </section>
         <footer>
         <div id="fixed_links" class="f_left">
             <div class="vertical">
                 <hr/>
-                <a target="_blank" href="https://github.com/kurre-lokanadh-reddy" alt="github"><i class="fa fa-github"></i></a>
-                <a target="_blank" href="https://www.linkedin.com/in/kurre-lokanadh-reddy-012a9a171/" alt="linkedin"><i class="fa fa-linkedin"></i></a>
+                <a target="_blank" href="https://github.com/kurre-lokanadh-reddy" alt="github"><i class="fab fa-github"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/kurre-lokanadh-reddy-012a9a171/" alt="linkedin"><i class="fab fa-linkedin-in"></i></a>
                 <a target="_blank" href="https://public.tableau.com/app/profile/lokanadh.reddy" alt="tableau"><i class="fa fa-pie-chart"></i></a>
                 <a target="_blank" href="https://trailblazer.me/id/kurre-lokanadh-reddy" alt="Salesforce"><i class="fab fa-salesforce"></i></a>
             </div>
@@ -208,7 +201,12 @@
         </div>
         
             <small>
-                Designed & Built by Lokanadh Reddy
+                <span class="f-color">Designed & Built by @ Lokanadh Reddy<br/><br/></span>
+                <span class="t-color">
+                    Mentions<br/>
+                    site : brittanychiang.com<br/>
+                    codepen user : @john052
+                </span>
             </small>
         </footer>
         <!-- ===== IONICONS ===== -->

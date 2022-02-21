@@ -108,7 +108,7 @@ function showModalInit(){
 
 
 function initiateCommandVariable(modal){
-    var userName = 'User'+Math.floor(Math.random() * 10) + 100;
+    var userName = 'User'+ (Math.floor(Math.random() * 300) + 50);
     var jsConsole = 
     {
         

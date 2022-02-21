@@ -12,6 +12,12 @@ window.onscroll = function(e) {
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
+    var icn = document.getElementById("menuBars");
+    if (icn.className === "fa fa-bars") {
+      icn.className = "fa fa-bars-staggered";
+    } else {
+      icn.className = "fa fa-bars";
+    }
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
       x.className += " responsive";
